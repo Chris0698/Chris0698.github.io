@@ -8,6 +8,7 @@ const Contact = function() {
             <p>Email: <a className="emailLink" href="mailto:Email: chris.aston98@outlook.com">chris.aston98@outlook.com</a></p>
             <p>Mobile number: 07842 529830</p>
             <p><a href="https://www.linkedin.com/in/chris-aston-45b4a3202/" target="_blank" rel="noopener no referrer" className="linkedInButton">LinkedIn Profile</a></p>
+            <p><a href="https://github.com/Chris0698" target="_blank" rel="noopener no referrer" className="linkedInButton">GitHub Profile</a></p>
         </section>
     );
 };

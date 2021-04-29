@@ -147,10 +147,7 @@ nav > a {
 }
 
 .projectCardButton {
-  margin-left: 0;
-  /* position: absolute;
-  bottom: 20px;
-  left: 0; */
+  margin-left: 4px;
 }
 
 .projectCardButton:hover, #about-contact-button:hover, .codeButton:hover, .linkedInButton:hover, .show-more-button:hover {
