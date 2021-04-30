@@ -1,5 +1,6 @@
 import React from "react"
 import Layout from "../components/layout";
+import { Link } from "gatsby";
 
 import img1 from "../images/WAI1.png"
 import img2 from "../images/WAI2.png"
@@ -105,6 +106,7 @@ const WAI = () => {
           <a target="_blank" rel="noopener no referrer" href="https://github.com/Chris0698/WebApp" className="codeButton">View Code</a>
         </div>
       </div>
+      <Link to="/#projects" className="projectCardButton">Back To Projects</Link>
     </Layout>
   )
 }

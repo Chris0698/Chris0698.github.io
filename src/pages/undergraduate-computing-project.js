@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../components/layout";
+import { Link } from "gatsby";
 
 import image1 from "../images/robot.jpg";
 import circuitDiagram from "../images/CircuitDiagram.jpg";
@@ -75,7 +76,6 @@ const UndergradProject = function() {
                     <p>I hope to complete it in my own time. Changes i would make include improving the movement of the robot and 
                         look at the producing the map by using the SLAM library features found in MatLab, this would replace the Java application but would require the data saved to the SD card to be potentially in a different format.
                     </p>
-                    
                 </div>
                 <div className="projectInfoCol2">
                     <p>Date: 2018 - 2019</p>
@@ -83,6 +83,7 @@ const UndergradProject = function() {
                     <p className="cardLanguage">C++ and Java</p>
                 </div>
             </div>
+            <Link to="/#projects" className="projectCardButton">Back To Projects</Link>
         </Layout>
     );
 }

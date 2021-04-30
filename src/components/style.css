@@ -27,7 +27,7 @@ h1, h2, h3, #skills > li, figcaption, #designPatterns > li  {
 #content {
   width: 90%;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 110px;
 }
 
 .emailLink {
@@ -69,7 +69,7 @@ nav > ul > li {
 }
 
 nav > a {
-  margin-top: 30px;
+  margin-top: 25px;
   text-decoration: none;
   font-size: 26px;
   display: inline-block;
@@ -189,6 +189,7 @@ nav > a {
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
+  margin-bottom: 50px;
 }
 
 .projectInfoCol1 {
@@ -280,7 +281,8 @@ nav > a {
 
 @media screen and (max-width: 768px) {
   #content {
-    margin-top: 30px;
+    /* margin-top: 30px; */
+    margin-top: 100px;
   }
 
   #aboutFigure {
@@ -292,6 +294,10 @@ nav > a {
   .projectInfo {
     display: block;
     width: 100%;
+  }
+
+  .projectInfoCol2 {
+    margin-top: 40px;
   }
 
   .projectInfo > div {

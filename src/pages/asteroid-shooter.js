@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../components/layout";
+import { Link } from "gatsby";
 
 import video from "../images/asteroidVid.mp4";
 
@@ -47,6 +48,7 @@ const AsteroidShooter = function() {
                   <a target="_blank" rel="noopener no referrer" href="https://github.com/Chris0698/AsteroidGame" className="codeButton">View Code</a>
               </div>
             </div>
+            <Link to="/#projects" className="projectCardButton">Back To Projects</Link>
         </Layout>
     );
 }

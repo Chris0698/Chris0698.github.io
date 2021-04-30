@@ -6,7 +6,7 @@ const GlobalStyle = createGlobalStyle`
     --light-navy: #112240;
      
     --navy-shadow: rgba(2, 12, 27, 0.7);
-    --nav-height: 90px;
+    --nav-height: 70px;
     --nav-scroll-height: 70px;
 
     --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);

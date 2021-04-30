@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../components/layout";
+import { Link } from "gatsby";
 
 import image1 from "../images/bookingSystem.png";
 import image2 from "../images/bookingSystem1.png";
@@ -74,6 +75,7 @@ const BookingSystem = function() {
           <a target="_blank" rel="noopener no referrer" href="https://github.com/Chris0698/BookingSystemAssignment" className="codeButton">View Code</a>
         </div>
       </div>
+      <Link to="/#projects" className="projectCardButton">Back To Projects</Link>
     </Layout>
   );
 }

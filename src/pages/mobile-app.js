@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Layout from "../components/layout";
+import { Link } from "gatsby";
 
 import MobileApp0 from "../images/MobileApp.jpg"
 import MobileApp1 from "../images/MobileApp1.jpg"
@@ -13,7 +14,7 @@ import MobileApp7 from "../images/MobileApp7.jpg"
 var visible = false;
 
 const buttonClick = () => {
-  console.log("Button clicked");
+  //console.log("Button clicked");
   var images = document.getElementById("more-mobile-app-photos");
   var button = document.getElementById("show-more-button");
 
@@ -126,6 +127,7 @@ const MobileApp = function() {
             <a target="_blank" rel="noopener noreferrer" href="https://github.com/Chris0698/KF7008Assignment" className="codeButton">View Code</a>
           </div>
         </div>
+        <Link to="/#projects" className="projectCardButton">Back To Projects</Link>
     </Layout>
   );
 }

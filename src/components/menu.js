@@ -14,10 +14,9 @@ const StyledMenu = styled.div`
 `;
 
 const StyledHamburgerButton = styled.button`
-  @media (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     position: absolute;
     right: 5%;
-    top: 20%;
     z-index: 10;
     //margin-right: -15px;
     padding: 15px;
@@ -85,7 +84,7 @@ const StyledHamburgerButton = styled.button`
 `;
 
 const StyledSideBar = styled.div`
-  @media (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     position: fixed;
     height: 100%;
     overflow-x: hidden;

@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../components/layout";
+import { Link } from "gatsby";
 
 import image1 from "../images/shikakuSimulator.png";
 import image2 from "../images/shikakuSimulator1.png"
@@ -92,6 +93,7 @@ const PencilPuzzle = function() {
                     <p className="cardLanguage">C++</p>
                 </div>
             </div>
+            <Link to="/#projects" className="projectCardButton">Back To Projects</Link>
         </Layout>
     );
 };
