@@ -83,7 +83,7 @@ const UndergradProject = function() {
                     <p className="cardLanguage">C++ and Java</p>
                 </div>
             </div>
-            <Link to="/#projects" className="projectCardButton">Back To Projects</Link>
+            <Link to="/#projects" className="backToProjectsButton">Back To Projects</Link>
         </Layout>
     );
 }

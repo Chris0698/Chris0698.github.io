@@ -93,7 +93,7 @@ const PencilPuzzle = function() {
                     <p className="cardLanguage">C++</p>
                 </div>
             </div>
-            <Link to="/#projects" className="projectCardButton">Back To Projects</Link>
+            <Link to="/#projects" className="backToProjectsButton">Back To Projects</Link>
         </Layout>
     );
 };

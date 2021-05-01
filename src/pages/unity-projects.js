@@ -43,7 +43,7 @@ const UnityProjects = function() {
                   <p>2018-2019</p>
               </div>
             </div>
-            <Link to="/#projects" className="projectCardButton">Back To Projects</Link>
+            <Link to="/#projects" className="backToProjectsButton">Back To Projects</Link>
         </Layout>
     );
 }

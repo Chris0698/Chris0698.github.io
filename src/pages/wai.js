@@ -106,7 +106,7 @@ const WAI = () => {
           <a target="_blank" rel="noopener no referrer" href="https://github.com/Chris0698/WebApp" className="codeButton">View Code</a>
         </div>
       </div>
-      <Link to="/#projects" className="projectCardButton">Back To Projects</Link>
+      <Link to="/#projects" className="backToProjectsButton">Back To Projects</Link>
     </Layout>
   )
 }

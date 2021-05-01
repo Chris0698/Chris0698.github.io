@@ -119,7 +119,7 @@ const BusyBackpack = function() {
           <p className="cardLanguage">ReactJS, HTML5, CSS3, PHP7</p>
         </div>
       </div>
-      <Link to="/#projects" className="projectCardButton">Back To Projects</Link>
+      <Link to="/#projects" className="backToProjectsButton">Back To Projects</Link>
     </Layout>
   );
 }
