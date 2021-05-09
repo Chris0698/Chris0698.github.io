@@ -1,12 +1,14 @@
 import { Link } from "gatsby";
-import React from "react"
+import React, { useState } from "react"
 import styled, {css} from "styled-components"
 import {navLinks} from "../config"
 import Menu from "../components/menu"
+import ScrollDirection from "../hooks/scroll"
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 const StyledHeader = styled.header`
   position: fixed;
+  box-shadow: 0 10px 30px -10px var(--navy-shadow);
   top: 0;
   z-index: 11;
   width: 100%;
@@ -67,15 +69,25 @@ const StyledLinks = styled.div`
 `;
 
 const Nav = () => {
-  // const scrollDirection = useScrollDirection('down');
-  // const [scrolledToTop, setScrolledToTop] = useState(true);
+  const [hideHeader, showHeader] = useState(false);
 
-  // const handleScroll = () => {
-  //   setScrolledToTop(window.pageYOffset < 50);
-  // };
+  const MIN_SCROLL = 80;
+  const TIME_DELAY = 400;
+
+  ScrollDirection(callbackData => {
+    const {previousScrollTop, currentScrollTop} = callbackData;
+    const isScrolledDown = previousScrollTop < currentScrollTop;
+    const isMinScrolled = currentScrollTop > MIN_SCROLL;
+
+    setTimeout(() => {
+      showHeader(isScrolledDown && isMinScrolled);
+    }, TIME_DELAY);
+  });
+
+  const hiddenStyle = hideHeader ? 'hidden' : '';
 
   return(
-    <StyledHeader>
+    <StyledHeader className={`header ${hiddenStyle}`}>
       <StyledNav>
         <Link to="/" className="home">Chris Aston</Link>
         <StyledLinks>
