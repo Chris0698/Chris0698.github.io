@@ -7,19 +7,21 @@ import ScrollDirection from "../hooks/scroll"
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 const StyledHeader = styled.header`
-  position: fixed;
-  box-shadow: 0 10px 30px -10px var(--navy-shadow);
-  top: 0;
-  z-index: 11;
-  width: 100%;
-  height: var(--nav-height);
-  background-color: #112240;
-  background-color: rgba(10, 25, 47, 0.6);
-  filter: none !important;
-  pointer-events: auto !important;
-  user-select: auto !important;
-  backdrop-filter: blur(10px);
-  transition: var(--transition);
+  // position: fixed;
+  // box-shadow: 0 10px 30px -10px var(--navy-shadow);
+  // top: 0;
+  // transform: translateY(0);
+  // transition: transform 0.3s ease;
+  // //z-index: 11;
+  // width: 100%;
+  // height: var(--nav-height);
+  // //background-color: #112240;
+  // //background-color: rgba(10, 25, 47, 0.6);
+  // //filter: none !important;
+  // //pointer-events: auto !important;
+  // //user-select: auto !important;
+  // backdrop-filter: blur(10px);
+  // //transition: var(--transition);
 `;
 
 const StyledNav = styled.nav`
@@ -69,7 +71,7 @@ const StyledLinks = styled.div`
 `;
 
 const Nav = () => {
-  const [hideHeader, showHeader] = useState(false);
+  const [shouldHideHeader, setShouldHideHeader] = useState(false);
 
   const MIN_SCROLL = 80;
   const TIME_DELAY = 400;
@@ -80,11 +82,11 @@ const Nav = () => {
     const isMinScrolled = currentScrollTop > MIN_SCROLL;
 
     setTimeout(() => {
-      showHeader(isScrolledDown && isMinScrolled);
+      setShouldHideHeader(isScrolledDown && isMinScrolled);
     }, TIME_DELAY);
   });
 
-  const hiddenStyle = hideHeader ? 'hidden' : '';
+  const hiddenStyle = shouldHideHeader ? 'hidden' : '';
 
   return(
     <StyledHeader className={`header ${hiddenStyle}`}>

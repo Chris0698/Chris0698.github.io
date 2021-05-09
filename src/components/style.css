@@ -65,6 +65,24 @@ nav > ul > li {
   padding: 10px;
 } */
 
+.header {
+  position: fixed;
+  /* box-shadow: 0 10px 30px -10px var(--navy-shadow); */
+  top: 0;
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+  z-index: 11;
+  width: 100%;
+  /* height: var(--nav-height); */
+  background-color: #112240;
+  background-color: rgba(10, 25, 47, 0.6);
+  filter: none !important;
+  pointer-events: auto !important;
+  user-select: auto !important;
+  backdrop-filter: blur(10px);
+  /* transition: var(--transition); */
+}
+
 .webLink {
   color: #64ffda;
 }
