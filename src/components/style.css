@@ -27,7 +27,7 @@ h1, h2, h3, #skills > li, figcaption, #designPatterns > li  {
 #content {
   width: 90%;
   margin: 0 auto;
-  margin-top: 110px;
+  margin-top: 100px;
   margin-bottom: 50px;
 }
 
@@ -67,20 +67,23 @@ nav > ul > li {
 
 .header {
   position: fixed;
-  /* box-shadow: 0 10px 30px -10px var(--navy-shadow); */
+  box-shadow: 0 10px 30px -10px #112240;
   top: 0;
   transform: translateY(0);
   transition: transform 0.3s ease;
   z-index: 11;
   width: 100%;
-  /* height: var(--nav-height); */
+  height: 70px;
   background-color: #112240;
   background-color: rgba(10, 25, 47, 0.6);
   filter: none !important;
   pointer-events: auto !important;
   user-select: auto !important;
   backdrop-filter: blur(10px);
-  /* transition: var(--transition); */
+}
+
+.header.hidden {
+  transform: translateY(-110%);
 }
 
 .webLink {

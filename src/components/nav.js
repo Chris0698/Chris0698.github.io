@@ -71,10 +71,12 @@ const StyledLinks = styled.div`
 `;
 
 const Nav = () => {
+
+  // https://medium.com/mtholla/create-a-transitioning-header-using-react-hooks-like-mediums-c70ed211f7c9
   const [shouldHideHeader, setShouldHideHeader] = useState(false);
 
   const MIN_SCROLL = 80;
-  const TIME_DELAY = 400;
+  const TIME_DELAY = 200;
 
   ScrollDirection(callbackData => {
     const {previousScrollTop, currentScrollTop} = callbackData;
