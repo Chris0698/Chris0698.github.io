@@ -101,7 +101,6 @@ nav > a {
 }
 
 .link:hover, .menuLink:hover {
-  /* text-decoration: underline; */
   color: royalblue;
 }
 
@@ -146,7 +145,6 @@ nav > a {
 }
 
 .cardExtraInfo {
-  /* background-color: pink; */
   position: absolute;
   padding-bottom: 30px;
   bottom: 0;
@@ -318,10 +316,6 @@ nav > a {
     display: block;
     width: 100%;
   }
-
-  /* .projectInfoCol2 {
-    margin-top: 40px;
-  } */
 
   .projectInfo > div {
     width: 100%;
