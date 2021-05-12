@@ -1,6 +1,24 @@
 import { Link } from "gatsby";
 import React from "react";
 
+var visible = false;
+
+const buttonClick = () => {
+  var images = document.getElementById("more-projects");
+  var button = document.getElementById("showMore");
+
+  if(!visible) {
+    visible = true;
+    images.style.display = "flex";
+    button.innerHTML = "Show Less";
+  } else {
+    visible = false;
+    images.style.display = "none";
+    button.innerHTML = "Show More";
+  }
+}
+
+
 const Project = function() {
     return (
         <section id="projects">
@@ -81,17 +99,19 @@ const Project = function() {
                   </div>
                 </div>
 
-                {/* <div className="projectCard">
-                    <h3>Asteroid Shooter Game</h3>
-                    <p>Asteroid shooter game improving the provided code base and creating a component based architecture.</p>
-                    <p>Year: 2018-2019</p>
-                    <div className="cardExtraInfo">
-                        <div>
-                            <Link to="/asteroid-shooter" className="projectCardButton">More</Link>
-                        </div>
+                <div id="more-projects">
+                  <div className="projectCard">
+                    <div className="projectCardDetails">
+                      <h3>Asteroid Shooter Game</h3>
+                      <p>Asteroid shooter game improving the provided code base and creating a component based architecture.</p>
+                      <div className="cardExtraInfo">
+                        <p>Year: 2018-2019</p>
                         <p className="cardLanguage">C++ with DirectX9</p>
+                        <Link to="/asteroid-shooter" className="projectCardButton">More</Link> 
+                      </div>
                     </div>
-                </div> */}
+                  </div>
+                </div>
 
                 {/* <div className="projectCard">
                     <h3>Unity Projects</h3>
@@ -105,6 +125,7 @@ const Project = function() {
                     </div>
                 </div> */}
             </div>
+            <button id="showMore" onClick={buttonClick}>Show More</button>
         </section>
     );
 };

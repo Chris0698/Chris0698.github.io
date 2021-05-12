@@ -194,7 +194,7 @@ nav > a {
   flex-wrap: wrap;
 }
 
-#more-mobile-app-photos {
+#more-mobile-app-photos, #more-projects {
   display: none;
 }
 
