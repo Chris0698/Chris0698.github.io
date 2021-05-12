@@ -295,7 +295,7 @@ nav > a {
     height: 300px;
   }
 
-  #robotImage, #asteroidShooterImage, #asteroidShooterVideo, #bookingSystemImage, #shikakuSimulatorImage {
+  #robotImage, #asteroidShooterImage, #asteroidShooterVideo, .bookingSystemImage, #shikakuSimulatorImage {
     width: 100%;
   }
 }
@@ -331,5 +331,14 @@ nav > a {
 
   #projects-images > figure {
     width: 100%;
+  }
+
+  #more-mobile-app-photos, #projects-images  {
+    /* background-color: red; */
+  }
+
+  #more-mobile-app-photos > figure {
+    width: 100%;
+    /* background-color: gray; */
   }
 }

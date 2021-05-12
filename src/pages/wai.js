@@ -11,7 +11,6 @@ import img5 from "../images/WAI5.png"
 var visible = false;
 
 const buttonClick = () => {
-  console.log("Button clicked");
   var images = document.getElementById("more-mobile-app-photos");
   var button = document.getElementById("show-more-button");
 
@@ -33,33 +32,33 @@ const WAI = () => {
       <div id="projects-images">
         <figure>
           <img src={img1} alt="Booking System" 
-                                          id="bookingSystemImage"
-                                          title="Picture of the booking system implementation"/>
+                          className="bookingSystemImage"
+                          title="Picture of the booking system implementation"/>
           <figcaption>Opening UI after page load.</figcaption>
         </figure>
         <figure>
           <img src={img2} alt="Booking System" 
-                                          id="bookingSystemImage"
-                                          title="Picture of the booking system implementation"/>
+                          className="bookingSystemImage"
+                          title="Side pane with film details"/>
           <figcaption>Side pane with full film details.</figcaption>
         </figure>
         <div id="more-mobile-app-photos">
           <figure>
             <img src={img3} alt="Booking System" 
-                                            id="bookingSystemImage"
-                                            title="Picture of the booking system implementation"/>
+                            className="bookingSystemImage"
+                            title="ilms filtered by categories"/>
             <figcaption>Films filtered by categories.</figcaption>
           </figure>
           <figure>
             <img src={img4} alt="Booking System" 
-                                            id="bookingSystemImage"
-                                            title="Picture of the booking system implementation"/>
+                            className="bookingSystemImage"
+                            title="Search results for the query 'fish'"/>
             <figcaption>Search results for the query "fish" in the search box.</figcaption>
           </figure>
           <figure>
             <img src={img5} alt="Booking System" 
-                                            id="bookingSystemImage"
-                                            title="Picture of the booking system implementation"/>
+                            className="bookingSystemImage"
+                            title="Returned JSON containing all films with the category 'classic'"/>
             <figcaption>Returned JSON containing all films with the category "classic".</figcaption>
           </figure>
         </div>
