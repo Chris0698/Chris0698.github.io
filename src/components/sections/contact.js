@@ -4,7 +4,7 @@ const Contact = function() {
     return (
         <section id="contact">
             <h2>Contact</h2>
-            <p>You can contact me from email or mobile number, however it is best to ring after 12:00 if calling my mobile number.</p>
+            <p>You can contact me from email or mobile number.</p>
             <p>Email: <a className="emailLink" href="mailto:Email: chris.aston98@outlook.com">chris.aston98@outlook.com</a></p>
             <p>Mobile number: 07842 529830</p>
             {/* Try to repositions these, they feel tacked on */}

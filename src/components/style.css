@@ -156,7 +156,8 @@ nav > a {
   margin: 3px;
 }
 
-.projectCardButton, #about-contact-button, .codeButton, .linkedInButton, .show-more-button, .backToProjectsButton {
+.projectCardButton, #about-contact-button, .codeButton, .linkedInButton, .show-more-button, .backToProjectsButton, 
+#showMoreProjectsButton {
   border: 1px solid royalblue;
   color: royalblue;
   background-color: transparent;
@@ -171,7 +172,7 @@ nav > a {
 }
 
 .projectCardButton:hover, #about-contact-button:hover, .codeButton:hover, .linkedInButton:hover, .show-more-button:hover,
-  .backToProjectsButton:hover {
+  .backToProjectsButton:hover, #showMoreProjectsButton:hover {
   cursor: pointer;
   background-color: royalblue;
   color: #0a192f;
@@ -181,8 +182,8 @@ nav > a {
   margin-left: 0;
 }
 
-.show-more-button, #about-contact-button, .backToProjectsButton {
-  margin-left: 40%;
+.show-more-button, #about-contact-button, .backToProjectsButton, #showMoreProjectsButton {
+  margin-left: 45%;
 }
 
 #projects {
