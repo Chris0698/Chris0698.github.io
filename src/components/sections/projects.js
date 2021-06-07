@@ -27,6 +27,20 @@ const Project = function() {
         <div className="projectOuter">
           <div className="projectCard">
             <div className="projectCardDetails">
+              <h3>Lottery Simulator</h3>
+              <p>A console application to simmulate Lottery or Thunderball games. Then the data is saved to a 
+                local SQL Server database using Entity Framework.
+              </p>
+            </div>
+            <div className="cardExtraInfo">
+              <p>Year: 2021</p>
+              <p className="cardLanguage">C# .Net Core + ADO.Net Entity Framework</p>
+              <Link to="/lottery" className="projectCardButton">More</Link>
+            </div>
+          </div>
+
+          <div className="projectCard">
+            <div className="projectCardDetails">
               <h3>Pencil Puzzle Research Project (Mcomp Project)</h3>
               <p>This was a research project. For this project, we looked at algorithms performance Vs pencil puzzles.</p>
             </div>
@@ -56,7 +70,7 @@ const Project = function() {
             </div>
             <div className="cardExtraInfo">
               <p>Year: 2019</p>
-              <p className="cardLanguage">C# with .Net Framework + ADO.Net</p>
+              <p className="cardLanguage">C# .Net Framework + ADO.Net Entity Framework</p>
               <Link to="/booking-system" className="projectCardButton">More</Link>  
             </div>
           </div>

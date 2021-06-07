@@ -25,16 +25,16 @@ const UnityProjects = function() {
                   <p> My first project I extended a simple asteroid shooter game tutorial found
                       <Link href="https://learn.unity.com/project/space-shooter-tutorial" target="_blank" className="webLink" rel="noopener noreferrer"> here</Link>. For this game, I added an interactive game menu, another game mode 
                       where you had to exceed a goal to beat the level, and I also added special abilities to the player ship. The special ability was made with flexibility in mind and can be replaced with 
-                      a different or new ability. Finally, I made the game playable on mobile devices. 
+                      a different or new ability. Finally, I made the game playable on mobile devices by capturing finger input on the left hand side of the game to move left, and finger input on the right to move right. 
                   </p>
                   <p>
                     I hope to develop the game further by locking levels and requiring them to be unlocked by completing the previous one. I also hope to add a unlocked system where you can "buy" extra abilities 
-                    or new type of ship, making use of the flexible ability system.  
+                    or new type of ship, making use of the flexible ability system.  I also hope to experiement some more with shaders on the ship for abilites.
                   </p>
               </div>
               <div className="projectInfoCol2">
                   <p>Date</p>
-                  <p>2018-2019</p>
+                  <p>2018 - On Going</p>
               </div>
           </div>
           <video controls muted id="UnityAsteroidShooterVideo">
