@@ -30,6 +30,10 @@ const Lottery = function() {
             Then the draw is maded and the results are compared and prize money is presented. If stats was selected, the data for the game was presented, this included
             getting the data from the database then presenting it. Presented data included total won, avergae winnings, total "spent" and highest winnings.
           </p>
+          <p>I decided to do this project because i wanted to create a .Net core project, having done a .Net Framework project before. I also wanted 
+            to do another project involving Entity Framework but in the code first appraoch as this was something i had no experience with before.
+
+          </p>
           <h3>Techincal stuff</h3>
           <p>
             To handle generating the random number generation for lucky dips and draws, i populated a Dictionary with a number, bool pair. 
