@@ -16,7 +16,7 @@ const Lottery = function() {
           <img src={image1} alt="Booking System" 
                             id="busyBackpackImage"
                             title="Busy Backpack home page"/>
-           <figcaption>Thundberball play.</figcaption>
+           <figcaption>Thundberball game.</figcaption>
         </figure>
         <figure>
           <img src={image2} alt="Booking System" 
@@ -42,13 +42,13 @@ const Lottery = function() {
           <h2>Overview</h2>
           <p>
             This was a personal project to see well i could do playing the Thunderball or Lottery games, without burning through my own money.
-            For extra practise i decided to save the balls drawn and what balls i selected (or got a lucky dip) to a local SQL Server database 
+            For extra practise i decided to save the balls drawn and what balls i selected (or got from a lucky dip) to a local SQL Server database 
             using Entity Framework using a code-first approach, which is the opposite of how the booking system database was implemented.
           </p>
           <p>
             For each game, the user could select if they wanted to play, search or get full stats from previous draws. 
-            If the user plays then they can select how many lines they wanted, with 1 line being 1 game. And if they wanted a lucky dip. 
-            Then the draw is made and the results are compared and prize money is presented. If stats were selected, the data for the game was presented, this included
+            If the user plays then they can select how many lines they wanted, with 1 line being 1 game. The user could select their numbers for the game, if they wanted a lucky dip. 
+            The draw is then made and the results are compared and prize money is presented. If stats were selected, the data for the game was presented, this included
             getting the data from the database then presenting it. Presented data included total won, average winnings, total "spent" and highest winnings.
           </p>
           <p>
@@ -59,14 +59,15 @@ const Lottery = function() {
           <p>
             To handle generating the random number generation for lucky dips and draws, i populated a Dictionary with a number, bool pair. 
             The numbers are numbers that are valid for the game, so for lottery 1 - 59, Thunderball 1 - 39. The bool value was for if the number been selected.
-            Elements from the dictionary were randomly selected, the amount selected dependant on the number of main balls selected (5 for Thunderball and 6 for Lotto).  
+            Elements from the dictionary were randomly selected, wuth the amount selected dependant on the number of main balls selected for the game (5 for Thunderball and 6 for Lotto).  
             These elements are checked that if the boolean has been selected is false, if it true then another element in the dictionary is selected, and the process repeats.
-            The number in the element is added to an array and the array is then organised smallest to largest. Finally, the bonus balls are added in the same manner as before.  
+            The number in the element is added to an array and the array is then organised smallest to largest. Finally, the bonus balls are drawn. For thunderball the bonus ball is one random number selected between 1 - 14, 
+            for Lotto i got the bonus ball in the same manner was the regular balls are generated.
           </p>
           <p>
-            The database was a local SQL Server database that part of Visual Studio. This was a code-first approach. To keep things simple, i had 1 table called draws that stored an ID,
+            The database was a local SQL Server database that part of Visual Studio. This was a code-first approach. For V1 of the application, to keep things simple, i had 1 table called draws that stored an ID,
             the numbers drawn, the total cost, prize money won and the numbers selected for the draw. This made use of the draw class that contained the properties for each of these 
-            elements. This approach meant i avoided needing to write SQL to select and insert data.
+            elements. For version 2 i will have two separate tables and have a Thunderball draw class and a Lotto draw class extend off of Draw. This approach meant i avoided needing to write SQL to select and insert data.
           </p>
         </div>
         <div className="projectInfoCol2">
