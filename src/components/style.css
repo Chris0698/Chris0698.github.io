@@ -183,7 +183,10 @@ nav > a {
 }
 
 .show-more-button, #about-contact-button, .backToProjectsButton, #showMoreProjectsButton {
-  margin-left: 45%;
+  /* margin-left: 45%; */
+  margin:0 auto;
+  display:block;
+  width: 165px; 
 }
 
 #projects {

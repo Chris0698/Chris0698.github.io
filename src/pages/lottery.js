@@ -3,7 +3,9 @@ import React from "react";
 import Layout from "../components/layout";
 
 import image1 from "../images/Thunderball.png";
-//import image2 from "../images/Lotto.png";
+import image2 from "../images/Lotto.png";
+import image3 from "../images/ThunderballStats.png";
+import image4 from "../images/LottoStats.png"
 
 const Lottery = function() {
   return (
@@ -14,7 +16,25 @@ const Lottery = function() {
           <img src={image1} alt="Booking System" 
                             id="busyBackpackImage"
                             title="Busy Backpack home page"/>
-           <figcaption>Image of how Thundberball is played and stats.</figcaption>
+           <figcaption>Thundberball play.</figcaption>
+        </figure>
+        <figure>
+          <img src={image2} alt="Booking System" 
+                            id="busyBackpackImage"
+                            title="Busy Backpack home page"/>
+           <figcaption>Lotto game.</figcaption>
+        </figure>
+        <figure>
+          <img src={image3} alt="Booking System" 
+                            id="busyBackpackImage"
+                            title="Busy Backpack home page"/>
+           <figcaption>Thunderball stats.</figcaption>
+        </figure>
+        <figure>
+          <img src={image4} alt="Booking System" 
+                            id="busyBackpackImage"
+                            title="Busy Backpack home page"/>
+           <figcaption>Lotto stats.</figcaption>
         </figure>
       </div>
       <div className="projectInfo">

@@ -29,7 +29,7 @@ const Project = function() {
             <div className="projectCardDetails">
               <h3>Lottery Simulator</h3>
               <p>A console application to simmulate Lottery or Thunderball games. Then the data is saved to a 
-                local SQL Server database using Entity Framework.
+                local SQL Server database using Entity Framework using a code first appraoch.
               </p>
             </div>
             <div className="cardExtraInfo">
@@ -66,7 +66,7 @@ const Project = function() {
           <div className="projectCard">
             <div className="projectCardDetails">
               <h3>Booking System</h3>
-              <p>Group work booking system where the system had to be designed with the SOLID design principles and UML while making use of advanced techniques such as Entity Framework for a fictional company.</p>
+              <p>Group work booking system where the system had to be designed with the SOLID design principles and UML while making use of advanced techniques such as Entity Framework (Database first appraoch) for a fictional company.</p>
             </div>
             <div className="cardExtraInfo">
               <p>Year: 2019</p>
