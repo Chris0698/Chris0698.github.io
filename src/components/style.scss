@@ -1,15 +1,15 @@
 $font-stack: arial, sans-serif, vendona;
-$primary-color: #333;
 $pageBackgroundColour: #0a192f;
-$lighterNavyBlue: #112240;  //i really dont know how to name this
+$cardColour: #112240; 
+$webLinkColour: #64ffda;
 
-html {
+//common stuff//////////////////////////////////////////////////////////////////////
+body {
   background-color: $pageBackgroundColour;
 }
 
-body {
-  font: 100% $font-stack;
-  color: $primary-color;
+p, label, span, textarea, noscript, fieldset, a, figcaption, button, li, h1, h2, h3 {
+  font-family: $font-stack;
 }
 
 p {
@@ -17,49 +17,131 @@ p {
   color: #a8b2d1;
 }
 
+h1, h2, h3, #skills > li, figcaption, #designPatterns > li  {
+  color: white;
+}
 
+#designPatterns {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-//nav page
-.styledLinks {
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
-
-  margin-right: 5%;
+#designPatterns > li {
   width: 50%;
+}
 
-  ol {
-    padding: 0;
-    margin: 0;
-    float: right;
-    margin-top: 0;
-    margin-top: 15px;
-    li {
-      display: inline-block;
-      right: 30%;
-      background-color: red;
-      margin-top: -2px;
-      padding-top:0;
-      a {
-        background-color: blue;
-        color: white;
-        text-decoration: none;
-        font-size: 16px;
-        margin: 10px;
+#content {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.emailLink {
+  color: $webLinkColour;
+  text-decoration: none;
+}
+
+.webLink {
+  color: $webLinkColour;
+}
+
+.link:hover, .menuLink:hover {
+  color: $webLinkColour;
+}
+
+
+.home{
+  margin-top: 25px;
+  text-decoration: none;
+  font-size: 26px;
+  display: inline-block;
+  color: white;
+  margin-left: 5%;
+  width: 50%;
+}
+
+//nav page///////////////////////////////////////////////////////////////////////////////////////////44
+.styledHeader.hidden {
+  transform: translateY(-110%);
+}
+
+.styledHeader {
+  position: fixed;
+  box-shadow: 0 10px 30px -10px #112240;
+  top: 0;
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+  z-index: 11;
+  width: 100%;
+  height: 70px;
+  background-color: #112240;
+  background-color: rgba(10, 25, 47, 0.6);
+  filter: none !important;
+  pointer-events: auto !important;
+  user-select: auto !important;
+  backdrop-filter: blur(10px);
+
+  .styledNav {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    z-index: 12;
+  
+    .styledLinks {
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    
+      margin-right: 5%;
+      width: 50%;
+    
+      ol {
+        padding: 0;
+        margin: 0;
         float: right;
-        text-align: right;
+        margin-top: 0;
+        margin-top: 15px;
+    
+        li {
+          display: inline-block;
+          right: 30%;
+          // background-color: red;
+          margin-top: -2px;
+          padding-top:0;
+    
+          a {
+            // background-color: blue;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 10px;
+            float: right;
+            text-align: right;
+          }
+        }
       }
     }
   }
 }
 
-//projects stuff
+//////nav menu////////////////////////////////////////
+
+.styledMenu {
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+
+
+////////////////projects stuff ////////////////////////////////////////////
 .projectsOuter {
   display: flex;
   flex-wrap: wrap;
 
   .projectCard {
-    background-color: $lighterNavyBlue;
+    background-color: $cardColour;
     width: 32.3%;
     border-radius: 4px;
     margin-bottom: 1%;

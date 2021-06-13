@@ -163,7 +163,7 @@ const Menu = () => {
   }, []);
 
   return(
-    <StyledMenu>
+    <div className="styledMenu">
       <Helmet>
         <body className={menuOpen ? 'blur' : ''} />
       </Helmet>
@@ -184,7 +184,7 @@ const Menu = () => {
           </ol>
         </nav>
       </StyledSideBar>
-    </StyledMenu>
+    </div>
   );
 }
 

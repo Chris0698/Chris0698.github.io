@@ -6,72 +6,6 @@ import Menu from "../components/menu"
 import ScrollDirection from "../hooks/scroll"
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
-//import styledNav from "../styles/nav.scss";
-
-const StyledHeader = styled.header`
-  // position: fixed;
-  // box-shadow: 0 10px 30px -10px var(--navy-shadow);
-  // top: 0;
-  // transform: translateY(0);
-  // transition: transform 0.3s ease;
-  // //z-index: 11;
-  // width: 100%;
-  // height: var(--nav-height);
-  // //background-color: #112240;
-  // //background-color: rgba(10, 25, 47, 0.6);
-  // //filter: none !important;
-  // //pointer-events: auto !important;
-  // //user-select: auto !important;
-  // backdrop-filter: blur(10px);
-  // //transition: var(--transition);
-`;
-
-const StyledNav = styled.nav`
-  // position: relative;
-  // display: flex;
-  // flex-direction: row;
-  // z-index: 12;
-  //background-color: green;
-`;
-
-const StyledLinks = styled.div`
-  // background-color: pink;
-  // @media screen and (max-width: 768px) {
-  //   display: none;
-  // }
-  // margin-right: 5%;
-  // width: 50%;
-
-  // ol {
-  //   //background-color: red;
-  //   padding: 0;
-  //   margin: 0;
-  //   float: right;
-  //   margin-top: 0;
-  //   // padding-top: 3px;
-  //   //margin-right: 5%;
-  //   margin-top: 15px;
-  //   li {
-  //     display: inline-block;
-  //     right: 30%;
-  //     // background-color: red;
-  //     margin-top: -2px;
-  //     padding-top:0;
-  //     a {
-  //       // background-color: blue;
-  //       color: white;
-  //       text-decoration: none;
-  //       font-size: 16px;
-  //       //float: right;
-  //       margin: 10px;
-  //       //padding: 10px;
-  //       float: right;
-  //       text-align: right;
-  //     }
-  //   }
-  // }
-`;
-
 const Nav = () => {
 
   // https://medium.com/mtholla/create-a-transitioning-header-using-react-hooks-like-mediums-c70ed211f7c9
@@ -93,8 +27,8 @@ const Nav = () => {
   const hiddenStyle = shouldHideHeader ? 'hidden' : '';
 
   return(
-    <StyledHeader className={`header ${hiddenStyle}`}>
-      <StyledNav>
+    <header className={`styledHeader ${hiddenStyle}`}>
+      <div className="styledNav">
         <Link to="/" className="home">Chris Aston</Link>
         <div className="styledLinks">
           <ol>
@@ -114,8 +48,8 @@ const Nav = () => {
             <Menu/>
           </CSSTransition>
         </TransitionGroup>
-      </StyledNav>
-    </StyledHeader>
+      </div>
+    </header>
   );
 };
 
