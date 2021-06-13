@@ -84,61 +84,61 @@ const StyledHamburgerButton = styled.button`
 `;
 
 const StyledSideBar = styled.div`
-  @media screen and (max-width: 768px) {
-    position: fixed;
-    height: 100%;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    //backdrop-filter: blur(10px);
-    top: 0;
-    bottom: 0;
-    right: 0;
-    padding: 50px 10px;
-    width: min(75vw, 400px);
-    min-height: 100vh;
-    //min-height: 100%;
-    outline: 0;
-    background-color: var(--light-navy);
-    box-shadow: -10px 0px 30px -15px var(--navy-shadow);
-    z-index: 9;
-    //this causes a horizontal scroll bar on edge and chrome.
-    //transform: translateX(${props => (props.menuOpen ? 0 : 100)}vw);
-    visibility: ${props => (props.menuOpen ? 'visible' : 'hidden')};
-    transition: var(--transition);
+  // @media screen and (max-width: 768px) {
+  //   position: fixed;
+  //   height: 100%;
+  //   overflow-x: hidden;
+  //   overflow-y: hidden;
+  //   //backdrop-filter: blur(10px);
+  //   top: 0;
+  //   bottom: 0;
+  //   right: 0;
+  //   padding: 50px 10px;
+  //   width: min(75vw, 400px);
+  //   min-height: 100vh;
+  //   //min-height: 100%;
+  //   outline: 0;
+  //   background-color: var(--light-navy);
+  //   box-shadow: -10px 0px 30px -15px var(--navy-shadow);
+  //   z-index: 9;
+  //   //this causes a horizontal scroll bar on edge and chrome.
+  //   //transform: translateX(${props => (props.menuOpen ? 0 : 100)}vw);
+  //   visibility: ${props => (props.menuOpen ? 'visible' : 'hidden')};
+  //   transition: var(--transition);
   }
 
   nav {
-    width: 100%;
-    flex-direction: column;
-    color: var(--lightest-slate);
-    font-family: var(--font-mono);
-    text-align: center;
+    // width: 100%;
+    // flex-direction: column;
+    // color: var(--lightest-slate);
+    // font-family: var(--font-mono);
+    // text-align: center;
   }
 
   ol {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    width: 100%;
+    // padding: 0;
+    // margin: 0;
+    // list-style: none;
+    // width: 100%;
 
-    li {
-      margin: 50px auto 20px;
+    // li {
+    //   margin: 50px auto 20px;
 
-      &:before {
-        display: block;
-        margin-bottom: 5px;
-        color: var(--green);
-        font-size: var(--fz-sm);
-      }
-    }
+    //   &:before {
+    //     display: block;
+    //     margin-bottom: 5px;
+    //     color: var(--green);
+    //     font-size: var(--fz-sm);
+    //   }
+    // }
 
-    a {
-      //background-color: pink;
-      width: 100%;
-      //padding: 30px 20px 20px;
-      color: white;
-      text-decoration: none;
-    }
+    // a {
+    //   //background-color: pink;
+    //   width: 100%;
+    //   //padding: 30px 20px 20px;
+    //   color: white;
+    //   text-decoration: none;
+    // }
   }
 `;
 

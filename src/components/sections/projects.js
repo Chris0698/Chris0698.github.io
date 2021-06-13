@@ -24,7 +24,7 @@ const Project = function() {
     <section id="projects">
         <h2>Projects</h2>
         <p>A collection of past projects done can be found here. Some of the projects also have a link to a GitHub repository to view the source code.</p>
-        <div className="projectOuter">
+        <div className="projectsOuter">
           <div className="projectCard">
             <div className="projectCardDetails">
               <h3>Lottery Simulator</h3>

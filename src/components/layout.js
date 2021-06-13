@@ -4,8 +4,10 @@ import Head from "./head"
 
 import GlobalStyle from "../styles/style"
 
-import "./layout.css"
-import "./style.css"
+// import "./layout.css"
+// import "./style.css"
+
+import "./style.scss"
 
 
 const Layout = (props) => {

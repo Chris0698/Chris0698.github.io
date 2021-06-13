@@ -6,6 +6,8 @@ import Menu from "../components/menu"
 import ScrollDirection from "../hooks/scroll"
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
+//import styledNav from "../styles/nav.scss";
+
 const StyledHeader = styled.header`
   // position: fixed;
   // box-shadow: 0 10px 30px -10px var(--navy-shadow);
@@ -25,49 +27,49 @@ const StyledHeader = styled.header`
 `;
 
 const StyledNav = styled.nav`
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  z-index: 12;
+  // position: relative;
+  // display: flex;
+  // flex-direction: row;
+  // z-index: 12;
   //background-color: green;
 `;
 
 const StyledLinks = styled.div`
-  //background-color: pink;
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
-  margin-right: 5%;
-  width: 50%;
+  // background-color: pink;
+  // @media screen and (max-width: 768px) {
+  //   display: none;
+  // }
+  // margin-right: 5%;
+  // width: 50%;
 
-  ol {
-    //background-color: red;
-    padding: 0;
-    margin: 0;
-    float: right;
-    margin-top: 0;
-    // padding-top: 3px;
-    //margin-right: 5%;
-    margin-top: 15px;
-    li {
-      display: inline-block;
-      right: 30%;
-      // background-color: red;
-      margin-top: -2px;
-      padding-top:0;
-      a {
-        // background-color: blue;
-        color: white;
-        text-decoration: none;
-        font-size: 16px;
-        //float: right;
-        margin: 10px;
-        //padding: 10px;
-        float: right;
-        text-align: right;
-      }
-    }
-  }
+  // ol {
+  //   //background-color: red;
+  //   padding: 0;
+  //   margin: 0;
+  //   float: right;
+  //   margin-top: 0;
+  //   // padding-top: 3px;
+  //   //margin-right: 5%;
+  //   margin-top: 15px;
+  //   li {
+  //     display: inline-block;
+  //     right: 30%;
+  //     // background-color: red;
+  //     margin-top: -2px;
+  //     padding-top:0;
+  //     a {
+  //       // background-color: blue;
+  //       color: white;
+  //       text-decoration: none;
+  //       font-size: 16px;
+  //       //float: right;
+  //       margin: 10px;
+  //       //padding: 10px;
+  //       float: right;
+  //       text-align: right;
+  //     }
+  //   }
+  // }
 `;
 
 const Nav = () => {
@@ -94,7 +96,7 @@ const Nav = () => {
     <StyledHeader className={`header ${hiddenStyle}`}>
       <StyledNav>
         <Link to="/" className="home">Chris Aston</Link>
-        <StyledLinks>
+        <div className="styledLinks">
           <ol>
             <TransitionGroup>
               {navLinks && navLinks.map(({url, name}, i) => 
@@ -106,7 +108,7 @@ const Nav = () => {
               } 
             </TransitionGroup>
           </ol>
-        </StyledLinks>
+        </div>
         <TransitionGroup component={null}>
           <CSSTransition>
             <Menu/>
