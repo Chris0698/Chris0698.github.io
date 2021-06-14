@@ -334,11 +334,9 @@ h1, h2, h3, #skills > li, figcaption, #designPatterns > li  {
   .projectInfo {
     display: block;
     width: 100%;
-    background-color: pink;
 
-    div {
+    .projectInfoCol1, .projectInfoCol2 {
       width: 100%;
-      background-color: black;
     }
 
     .projectInfoCol2 {
