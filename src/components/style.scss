@@ -50,7 +50,6 @@ h1, h2, h3, #skills > li, figcaption, #designPatterns > li  {
   color: $webLinkColour;
 }
 
-
 .home{
   margin-top: 25px;
   text-decoration: none;
@@ -132,8 +131,46 @@ h1, h2, h3, #skills > li, figcaption, #designPatterns > li  {
   @media (max-width: 768px) {
     display: block;
   }
+
+  .styledHamburgerButton {
+    @media screen and (max-width: 768px) {
+      position: absolute;
+      right: 5%;
+      z-index: 10;
+      //margin-right: -15px;
+      padding: 15px;
+      //border: 0;
+      background-color: transparent;
+      color: inherit;
+      text-transform: none;
+      transition-timing-function: linear;
+      transition-duration: 0.15s;
+      transition-property: opacity, filter;
+    }
+  }
+
+  .hamburger-box {
+    display: inline-block;
+    position: relative;
+    width: 30px;
+    height: 24px;
+  } 
 }
 
+
+#about-inner {
+  display: flex;
+  flex-direction: row;
+
+  div {
+    width: 80%;
+    margin-right: 30px;
+  }
+
+  img {
+    width: 20%;
+  }
+}
 
 ////////////////projects stuff ////////////////////////////////////////////
 .projectsOuter {
@@ -148,5 +185,133 @@ h1, h2, h3, #skills > li, figcaption, #designPatterns > li  {
     margin-right: 1%;
     position: relative;
     height: 350px;
+
+    .projectCardDetails {
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 15px;
+    }
+
+    .cardExtraInfo {
+      position: absolute;
+      padding-bottom: 30px;
+      bottom: 0;
+      width: 100%;
+    }
+  }
+}
+
+.projectInfo {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+
+  .projectInfoCol1 {
+    width: 70%;
+  }
+  
+  .projectInfoCol2 {
+    width: 30%;
+    padding-top: 5%;
+    padding-left: 5%;
+  }
+}
+
+.projectCardButton, #about-contact-button, .codeButton, .linkedInButton, .show-more-button, .backToProjectsButton, 
+#showMoreProjectsButton {
+  border: 1px solid royalblue;
+  color: royalblue;
+  background-color: transparent;
+  text-decoration: none;
+  padding: 10px 12px 10px 12px;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+//project pages//////////////////////////////////////////////////
+.projectHeading, figcaption {
+  text-align: center;
+}
+
+.projectOverview > p {
+  padding-right: 40px;
+  margin-right: 40px;
+}
+
+
+//resize stuff////////////////////////////////////////@use 
+@media screen and (max-width: 1000px) {
+  .projectCard {
+    height: 480px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #about-inner {
+    display: inline-block;
+  }
+
+  #about-inner > div {
+    width: 100%;
+  }
+
+  .projectOuter {
+    width: 100%;
+  }
+
+  .projectCard {
+    width: 100%;
+    height: 300px;
+  }
+
+  #robotImage, #asteroidShooterImage, #asteroidShooterVideo, .bookingSystemImage, #shikakuSimulatorImage {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #content {
+    /* margin-top: 30px; */
+    margin-top: 100px;
+  }
+
+  #aboutFigure {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .projectInfo {
+    display: block;
+    width: 100%;
+  }
+
+  .projectInfo > div {
+    width: 100%;
+  }
+
+  .projectInfoCol2 {
+    padding: 0;
+  }
+
+  #projects-images {
+    display: block;
+  }
+
+  #projects-images > figure {
+    width: 100%;
+  }
+
+  #more-mobile-app-photos, #projects-images  {
+    /* background-color: red; */
+  }
+
+  #more-mobile-app-photos > figure {
+    width: 100%;
+    /* background-color: gray; */
   }
 }
