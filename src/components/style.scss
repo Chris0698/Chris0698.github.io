@@ -51,7 +51,7 @@ h1, h2, h3, #skills > li, figcaption, #designPatterns > li  {
 }
 
 .home{
-  margin-top: 25px;
+  margin-top: 20px;
   text-decoration: none;
   font-size: 26px;
   display: inline-block;
@@ -88,10 +88,6 @@ h1, h2, h3, #skills > li, figcaption, #designPatterns > li  {
     z-index: 12;
   
     .styledLinks {
-      @media screen and (max-width: 768px) {
-        display: none;
-      }
-    
       margin-right: 5%;
       width: 50%;
     
@@ -105,18 +101,20 @@ h1, h2, h3, #skills > li, figcaption, #designPatterns > li  {
         li {
           display: inline-block;
           right: 30%;
-          // background-color: red;
           margin-top: -2px;
           padding-top:0;
     
           a {
-            // background-color: blue;
             color: white;
             text-decoration: none;
             font-size: 16px;
             margin: 10px;
             float: right;
             text-align: right;
+          }
+
+          a:hover {
+            color: royalblue;
           }
         }
       }
@@ -137,7 +135,6 @@ h1, h2, h3, #skills > li, figcaption, #designPatterns > li  {
       position: absolute;
       right: 5%;
       z-index: 10;
-      //margin-right: -15px;
       padding: 15px;
       //border: 0;
       background-color: transparent;
@@ -301,6 +298,10 @@ h1, h2, h3, #skills > li, figcaption, #designPatterns > li  {
   display:block;
   width: 130px;
   text-align: center;
+}
+
+.backToProjectsButton {
+  width: 170px;
 }
   
 
