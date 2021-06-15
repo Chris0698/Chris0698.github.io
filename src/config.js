@@ -1,7 +1,13 @@
 module.exports = {
-  featuredProjects: {
-
-  },
+  featuredProjects: [
+    {
+      title: "",
+      imgPath: "",
+      description: "",
+      tech: "",
+      url: ""
+    }
+  ],
   projects: [
     {
       title: "Lottery Simulator",
