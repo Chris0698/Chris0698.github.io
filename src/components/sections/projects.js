@@ -43,7 +43,7 @@ const Project = function() {
           } 
         </div>
         <div id="more-projects">
-          <div className="projectCard">
+          {/* <div className="projectCard">
             <div className="projectCardDetails">
               <h3>Asteroid Shooter Game</h3>
               <p>Asteroid shooter game improving the provided code base and creating a component based architecture.</p>
@@ -53,7 +53,7 @@ const Project = function() {
               <p className="cardLanguage">C++ with DirectX9</p>
               <Link to="/asteroid-shooter" className="projectCardButton">More</Link> 
             </div>
-          </div>
+          </div> */}
           {/* <div className="projectCard">
             <h3>Unity Projects</h3>
             <p>Some Unity projects.</p>
@@ -66,7 +66,7 @@ const Project = function() {
             </div>
           </div>     */}
         </div>
-      <button id="showMoreProjectsButton" onClick={buttonClick}>Show More</button>
+      {/* <button id="showMoreProjectsButton" onClick={buttonClick}>Show More</button> */}
     </section>
   );
 };

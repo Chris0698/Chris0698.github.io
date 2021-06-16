@@ -32,9 +32,9 @@ module.exports = {
     },
     {
       title: "Booking System",
-      description: "Group work booking system where the system had to be designed with the SOLID design principles and UML while making use of advanced techniques such as Entity Framework (Database first appraoch) for a fictional company.",
+      description: "Group work booking system where we designed a booking application using the SOLID design principles and UML while making use of Entity Framework (Database first appraoch) and design patterns.",
       year: "2019",
-      tech: "C# .Net Framework + ADO.Net Entity Framework<",
+      tech: "C# .Net Framework + ADO.Net Entity Framework",
       url: "/booking-system"
     },
     {
@@ -58,6 +58,13 @@ module.exports = {
       tech: "ReactJS, HTML5, CSS3, PHP7",
       url: "/busy-backpack"
     },
+    {
+      title: "Asteroid Shooter Game",
+      description: "Asteroid shooter game improving the provided code base and creating a component based architecture.",
+      year: "2018-2019",
+      tech: "C++ with DirectX9",
+      url: "/asteroid-shooter"
+    }
   ],
   navLinks : [
       {

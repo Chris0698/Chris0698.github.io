@@ -182,15 +182,11 @@ h1, h2, h3, #skills > li, figcaption, #designPatterns > li  {
 
 .projectCard {
   background-color: $cardColour;
-  width: 32%;
+  width: 32.5%;
   border-radius: 4px;
-  margin-bottom: 2%;
+  margin-bottom: 1%;
   position: relative;
   height: 350px;
-
-  // @media screen and (max-width: 1000px) {
-  //     height: 100000px;
-  // }
 
   .projectCardDetails {
     padding-left: 10px;
@@ -206,6 +202,7 @@ h1, h2, h3, #skills > li, figcaption, #designPatterns > li  {
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 15px;
+    margin-left: -3px;
 
     p {
       padding: 3px;
