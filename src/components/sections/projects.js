@@ -27,7 +27,7 @@ const Project = function() {
         <p>A collection of past projects done can be found here. Some of the projects also have a link to a GitHub repository to view the source code.</p>
         <div className="projectsOuter">
           {projects && projects.map(({title, description, year, tech, url}, i) =>
-            (
+            (  
               <div className="projectCard">
                 <div className="projectCardDetails">
                   <h3>{title}</h3>

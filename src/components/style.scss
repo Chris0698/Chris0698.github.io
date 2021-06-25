@@ -263,7 +263,7 @@ h1, h2, h3, #skills > li, figcaption, #designPatterns > li  {
   border: 1px solid black;
 }
 
-.projectCardButton, #about-contact-button, .codeButton, .linkedInButton, .show-more-button, .backToProjectsButton, 
+.projectCardButton, #about-contact-button, .codeButton, .show-more-button, .backToProjectsButton, 
 #showMoreProjectsButton {
   border: 1px solid royalblue;
   color: royalblue;
@@ -274,7 +274,7 @@ h1, h2, h3, #skills > li, figcaption, #designPatterns > li  {
   margin-left: 10px;
 }
 
-.projectCardButton:hover, #about-contact-button:hover, .codeButton:hover, .linkedInButton:hover, .show-more-button:hover,
+.projectCardButton:hover, #about-contact-button:hover, .codeButton:hover, .show-more-button:hover,
   .backToProjectsButton:hover, #showMoreProjectsButton:hover {
   cursor: pointer;
   background-color: royalblue;
@@ -289,7 +289,7 @@ h1, h2, h3, #skills > li, figcaption, #designPatterns > li  {
   margin-right: auto;
 }
 
-.linkedInButton, .codeButton {
+.codeButton {
   margin-left: 0;
 }
 
@@ -322,6 +322,27 @@ h1, h2, h3, #skills > li, figcaption, #designPatterns > li  {
 .projectOverview > p {
   padding-right: 40px;
   margin-right: 40px;
+}
+
+#socials {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  // background-color: blue;
+  list-style-type: none;
+  margin: 0 auto;
+
+  li {
+    width: 50%;
+    margin: 0 auto;
+
+    svg {
+      
+      width: 40px;
+      height: 40px;
+      color: #a8b2d1;
+    }
+  }
 }
 
 

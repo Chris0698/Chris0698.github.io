@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import Projects from "../components/sections/projects"
 import Contact from "../components/sections/contact"
 import Intro from "../components/sections/Intro"
+import Footer from "../components/sections/footer"
 
 const Index = ({location}) => {
   return (
@@ -12,6 +13,7 @@ const Index = ({location}) => {
         <About/>
         <Projects/>
         <Contact/>
+        <Footer/>
     </Layout>
   );
 }
