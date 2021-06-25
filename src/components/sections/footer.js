@@ -10,9 +10,12 @@ const Footer = function() {
         {socials && socials.map(({name, url}, i) => 
           (
             <li>
-              <a href={url} target="_blank" rel="noreferrer">
-                <Icon name={name}/>
-              </a>
+              <div>
+                <a href={url} target="_blank" rel="noreferrer">
+                  <Icon name={name}/>
+                  <p>{name}</p>
+                </a>
+              </div>
             </li>
           )
         )}
