@@ -7,9 +7,8 @@ const skills = [
     "Java, C++ and C# (.Net Framework/ .Net Core and ADO.Net)",
     "PHP, JS, CSS and HTML",
     "JavaScript libraries including ReactJS and AngularJS (this portfolio was done in React and previous versions were Angular)",
-    "Mobile application development using Android Studio",
     "Databases including MySQL, SQLite and writing SQL",
-    "Using design patterns such as Decorator, MVC & MVP"
+    "Using design patterns such as Factory, Decorator, MVC & MVP"
 ];
 
 const designPatterns = [
@@ -56,7 +55,7 @@ const About = function (){
         </div>
 
         {/* change this */}
-        <img src={me} alt="Me" id="aboutFigure"/>
+        {/* <img src={me} alt="Me" id="aboutFigure"/> */}
       </div>
       <Link to="#contact" id="about-contact-button">Contact</Link>
     </section>

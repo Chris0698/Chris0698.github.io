@@ -34,7 +34,7 @@ const Project = function() {
                   <p>{description}</p>
                 </div>
                 <div className="cardExtraInfo">
-                  {/* <p>Year: {year}</p> */}
+                  <p>Year: {year}</p>
                   <p className="cardLanguage">{tech}</p>
                   <Link to={url} className="projectCardButton">More</Link>
                 </div>
