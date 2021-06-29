@@ -23,15 +23,16 @@ module.exports = {
     tech: "C++",
     url: "/pencil-puzzle",
     display: false
-  },
-  {
-    title: "Mobile App",
-    description: "A mobile application designed and developed for Android using Android Studio.",
-    year: "2020",
-    tech: "Java",
-    url: "/mobile-app",
-    display: false
-  },
+  }
+  ,
+  // {
+  //   title: "Mobile App",
+  //   description: "A mobile application designed and developed for Android using Android Studio.",
+  //   year: "2020",
+  //   tech: "Java",
+  //   url: "/mobile-app",
+  //   display: false
+  // },
   {
     title: "Booking System",
     description: "Group work booking system where we designed a booking application using the SOLID design principles and UML while making use of Entity Framework (Database first appraoch) and design patterns.",
@@ -56,15 +57,16 @@ module.exports = {
     url: "/undergraduate-computing-project",
     display: false
   }
-  // ,
-  // {
-  //   title: "Busy Backpack",
-  //   description: "Prototype website to replace Busy Backpack current site. Making sure the designs had a good UI and UX, be optimised for search engines, and look well on mobile devices.",
-  //   year: "2018-2019",
-  //   tech: "ReactJS, HTML5, CSS3, PHP7",
-  //   url: "/busy-backpack",
-  //   display: false
-  // },
+  ,
+  {
+    title: "Busy Backpack",
+    description: "Prototype website to replace Busy Backpack current site. Making sure the designs had a good UI and UX, be optimised for search engines, and look well on mobile devices.",
+    year: "2018-2019",
+    tech: "ReactJS, HTML5, CSS3, PHP7",
+    url: "/busy-backpack",
+    display: false
+  }
+  //,
   // {
   //   title: "Asteroid Shooter Game",
   //   description: "Asteroid shooter game improving the provided code base and creating a component based architecture.",
