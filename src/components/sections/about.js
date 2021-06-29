@@ -7,10 +7,8 @@ const skills = [
     "Java, C++ and C# (.Net Framework and ADO.Net)",
     "PHP, JS, CSS and HTML",
     "JavaScript libraries including ReactJS and AngularJS (this portfolio was done in React and previous versions were Angular)",
-    "Mobile application development using Android Studio",
+    // "Mobile application development using Android Studio",
     "Databases including MySQL, SQLite and writing SQL",
-    "Embedded Systems Development in C and C++",
-    "Git"
 ];
 
 const designPatterns = [
@@ -49,10 +47,10 @@ const About = function (){
                     <ul id="skills">
                         {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
                     </ul>
-                    <p>Programming patterns i have experience with include: </p>
+                    {/* <p>Programming patterns i have experience with include: </p>
                     <ul id="designPatterns">
                         {designPatterns && designPatterns.map((skill, i) => <li key={i}>{skill}</li>)}
-                    </ul>
+                    </ul> */}
                     <p>I'm currently looking for a position. Feel free to contact me if you have something suitable or just to ask questions.</p>
                 </div>
   
