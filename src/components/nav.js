@@ -26,6 +26,13 @@ const Nav = () => {
 
   const hiddenStyle = shouldHideHeader ? 'hidden' : '';
 
+
+  const ResumeLink = (
+    <a className="cv-button" href="/ChrisAstonCV.pdf" target="_blank" rel="noopener noreferrer">
+      My CV
+    </a>
+  );
+
   return(
     <header className={`styledHeader ${hiddenStyle}`}>
       <div className="styledNav">
@@ -42,6 +49,10 @@ const Nav = () => {
               } 
             </TransitionGroup>
           </ol>
+          {/* <div>
+              {ResumeLink}
+          </div> */}
+
         </div>
         <TransitionGroup component={null}>
           <CSSTransition>

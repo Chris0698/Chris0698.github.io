@@ -26,7 +26,7 @@ const Project = function() {
         <h2>Projects</h2>
         <p>A collection of past projects done can be found here. Some of the projects also have a link to a GitHub repository to view the source code.</p>
         <div className="projectsOuter">
-          {projects && projects.map(({title, description, year, tech, url}, i) =>
+          {/* {projects && projects.map(({title, description, year, tech, url}, i) =>
             (  
               <div className="projectCard">
                 <div className="projectCardDetails">
@@ -35,6 +35,21 @@ const Project = function() {
                 </div>
                 <div className="cardExtraInfo">
                   <p>Year: {year}</p>
+                  <p className="cardLanguage">{tech}</p>
+                  <Link to={url} className="projectCardButton">More</Link>
+                </div>
+              </div>
+            ))
+          }  */}
+
+          {projects && projects.map(({title, description, tech, url}, i) =>
+            (  
+              <div className="projectCard">
+                <div className="projectCardDetails">
+                  <h3>{title}</h3>
+                  <p>{description}</p>
+                </div>
+                <div className="cardExtraInfo">
                   <p className="cardLanguage">{tech}</p>
                   <Link to={url} className="projectCardButton">More</Link>
                 </div>

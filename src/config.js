@@ -74,7 +74,7 @@ module.exports = {
   //   display: false
   // }
   ],
-  navLinks : [
+  navLinks: [
     {
       name: "About",
       url: "/#about"
@@ -88,7 +88,7 @@ module.exports = {
       url: "/#contact"
     }
   ],
-  socials : [
+  socials: [
     {
       name: "GitHub",
       url: "https://github.com/Chris0698"

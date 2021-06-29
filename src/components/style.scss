@@ -2,6 +2,8 @@ $font-stack: arial, sans-serif, vendona;
 $pageBackgroundColour: #0a192f;
 $cardColour: #112240; 
 $webLinkColour: #64ffda;
+$generalTextColour: #a8b2d1;
+$importantTextColour: #fff;
 
 //common stuff//////////////////////////////////////////////////////////////////////
 body {
@@ -13,12 +15,12 @@ p, label, span, textarea, noscript, fieldset, a, figcaption, button, li, h1, h2,
 }
 
 p {
-  font-size: 16px;
   color: #a8b2d1;
+  font-size: 16px;
 }
 
 h1, h2, h3, #skills > li, figcaption, #designPatterns > li  {
-  color: white;
+  color: $importantTextColour;
 }
 
 #designPatterns {
