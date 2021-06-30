@@ -43,7 +43,7 @@ module.exports = {
   },
   {
     title: "Web App Intergration",
-    description: "A SPA Web application using front end and backend web techolgoies.",
+    description: "A SPA Web application using AngularJS for the front end, and a partial RESTful interface for the backend using OO-PHP.",
     year: "2019",
     tech: "OO-PHP, AngularJS",
     url: "/wai",
