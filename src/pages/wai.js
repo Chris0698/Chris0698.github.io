@@ -88,11 +88,15 @@ const WAI = () => {
             without the need of refreshing the page.
           </p>
           <p>
-            The application backend was made in Object-Oriented PHP. I had different classes such as a file writer (for error logging) an application registry class for user log-in data, a session class for session management,
+            The application backend was written in Object-Oriented PHP. I had different classes such as a file writer (for error logging) an application registry class for user log-in data, a session class for session management,
             and a record set class for generating JSON or XML from a database query. 
-            Additionally, i had a "service pipe" PHP file where the JS data service file would pass arguments to, and inside the PHP service pipe file it had different SQL to 
+            Additionally, i implemented a RESTful interface.
+            A "service pipe" like PHP file made use of these classes which implemented the RESTful interface. This file had parameters passed to it by URL parameters, and inside the PHP service pipe file it had different SQL to 
             select and update data, depending on the arguments passed. These queries made use of the JSON recordset class and the result was JSON encoded and echoed out for the JS files. 
             Try-catch blocks were used for each query and the exception was error logged.
+          </p>
+          <p>
+            For application security, the RESTful interface used prepared statements and sensitive data such as passwords was by method POST instead of GET.
           </p>
           <p>
             Finally, a testing page was provided to test each element such as log in and getting films to make sure everything was still working during development.
