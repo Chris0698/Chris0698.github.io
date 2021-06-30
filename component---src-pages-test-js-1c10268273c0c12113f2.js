@@ -1,0 +1,2 @@
+(self.webpackChunkchris_aston_web_portfolio=self.webpackChunkchris_aston_web_portfolio||[]).push([[672],{235:function(e,n,t){"use strict";t.r(n);var r,l=t(5761),c=t(7294),o=t(9).ZP.div(r||(r=(0,l.Z)(["\n  p {\n    color: blue;\n  }\n"])));n.default=function(){var e=(0,c.useState)(!1),n=e[0],t=e[1];return c.createElement("div",null,c.createElement("button",{onClick:function(){return t(!n)}},"Click"),c.createElement(o,{isOpen:n},c.createElement("p",null,"frwrfwrfrw")))}}}]);
+//# sourceMappingURL=component---src-pages-test-js-1c10268273c0c12113f2.js.map
