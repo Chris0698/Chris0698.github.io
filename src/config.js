@@ -12,7 +12,10 @@ module.exports = {
     title: "Lottery Simulator",
     description: "A console application to simmulate Lottery or Thunderball games. Then the data is saved to a local MS SQL Server database using Entity Framework using a code first appraoch.",
     year: "2021",
-    tech: "C# .Net Core + ADO.Net Entity Framework",
+    tech: [
+      "C# .Net Framework",
+      "ADO.Net Entity Framework"
+    ],
     url: "/lottery",
     display: false
   },
@@ -20,7 +23,9 @@ module.exports = {
     title: "Pencil Puzzle Research Project (Mcomp Project)",
     description: "This was a research project. For this project, we looked at algorithms performance Vs pencil puzzles.",
     year: "2019-2020",
-    tech: "C++",
+    tech: [
+      "C++"
+    ],
     url: "/pencil-puzzle",
     display: false
   }
@@ -37,7 +42,10 @@ module.exports = {
     title: "Booking System",
     description: "Group work booking system where we designed a booking application using the SOLID design principles and UML while making use of Entity Framework (Database first appraoch) and design patterns.",
     year: "2019",
-    tech: "C# .Net Framework + ADO.Net Entity Framework",
+    tech: [
+      "C# .Net Framework",
+      "ADO.Net Entity Framework"
+    ],
     url: "/booking-system",
     display: false
   },
@@ -45,7 +53,10 @@ module.exports = {
     title: "Web App Intergration",
     description: "A SPA Web application using front end and backend web techolgoies.",
     year: "2019",
-    tech: "OO-PHP, AngularJS",
+    tech: [
+      "OO=PHP",
+      "AngularJS"
+    ],
     url: "/wai",
     display: false
   },
@@ -53,7 +64,10 @@ module.exports = {
     title: "Undergraduate Computing Project",
     description: "The Undergraduate dissertation project was an embedded systems project about creating a mapping robot using a SLAM algorithm.",
     year: "2018-2019",
-    tech: "C++ and Java",
+    tech: [
+      "C++",
+      "Java"
+    ],
     url: "/undergraduate-computing-project",
     display: false
   }
@@ -62,7 +76,12 @@ module.exports = {
     title: "Busy Backpack",
     description: "Prototype website to replace Busy Backpack current site. Making sure the designs had a good UI and UX, be optimised for search engines, and look well on mobile devices.",
     year: "2018-2019",
-    tech: "ReactJS, HTML5, CSS3, PHP7",
+    tech: [
+      "ReactJS",
+      "PHP",
+      "HTML",
+      "CSS"
+    ],
     url: "/busy-backpack",
     display: false
   }
